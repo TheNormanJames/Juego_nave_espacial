@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Aquí_va_la_Description" />
+    <title>Juego: Naves Espaciales</title>
+    <style>
+      canvas {
+        background-color: cyan;
+        border: solid 5px yellowgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="960" height="500"
+      >Tu navegador no soporta el canvas de HTML5</canvas
+    >
+
+    <script>
+      game = {
+        canvas: null,
+        ctx: null,
+      };
+      window.onload = function () {
+        game.canvas = document.getElementById('canvas');
+        if (game.canvas && game.canvas.getContext) {
+          game.ctx = canvas.getContext('2d');
+          if (game.ctx) {
+          } else {
+            alert('NO cuentas con soporte a Canvas');
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
